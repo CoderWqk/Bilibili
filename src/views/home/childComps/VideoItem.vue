@@ -2,7 +2,9 @@
   <div id="videoItem" v-if="detailItem" @click="$router.push('/article/' + detailItem.id + '')">
     <div class="card-box">
       <a href="javascript:;">
-        <img :src="detailItem.img" alt="">
+        <div class="detaiImg">
+          <img :src="detailItem.img" alt="">
+        </div>
         <p class="title">{{detailItem.name}}</p>
         <div class="count">
           <span class="play">
@@ -44,12 +46,24 @@ export default {
       height: 100%;
       text-decoration: none;
       color: #212121;
-      img {
+      .detaiImg {
         width: 100%;
+        height: 226px;
+      }
+      .detaiImg > img {
+        width: 100%;
+        height: 100%;
+      }
+      .title {
+        position: relative;
+        top: 10px;
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
       }
       .count {
         position: absolute;
-        bottom: 24px;
+        bottom: 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
