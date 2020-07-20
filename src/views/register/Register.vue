@@ -8,7 +8,7 @@
       placeholder="请输入姓名"
       type="text"
       rule="^.{6,16}$"
-      style="margin: 12px 0;"
+      style="margin: 12px 0; border:1px solid #eaeaea"
       @inputChange="text => userMsg.name = text"
     />
     <input-text
@@ -16,6 +16,7 @@
       placeholder="请输入账号"
       type="text"
       rule="^.{6,16}$"
+      style="border:1px solid #eaeaea"
       @inputChange="text => userMsg.username = text"
     />
     <input-text
@@ -23,6 +24,7 @@
       placeholder="请输入密码"
       type="password"
       rule="^.{6,16}$"
+      style="margin-top: -1px; border:1px solid #eaeaea"
       @inputChange="text => userMsg.password = text"
     />
     <Button btnName="注册" @submit="registerSubmit" />
