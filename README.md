@@ -1,8 +1,8 @@
-# bilibili（B站移动端开发）
+# bilibili（B站移动端开发） --  rem + flex
 
 ## 技术栈  
 
-* vue + vuex + vue-router + ES6/7 + less + flex + vant  
+* vue + vue-cli + vue-router + axios + ES6 + sass + vant + flex + rem  
 
 ## 项目运行  
 
@@ -37,3 +37,5 @@ npm run serve
 * 用户自己选择栏目 -- 未完成
 * 开通大会员 -- 未完成
 * 投稿 -- 未完成
+
+
