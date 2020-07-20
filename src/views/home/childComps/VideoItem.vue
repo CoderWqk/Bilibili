@@ -28,9 +28,6 @@ export default {
         return {}
       }
     }
-  },
-  mounted() {
-    console.log(this.$route)
   }
 }
 </script>
@@ -52,24 +49,28 @@ export default {
       }
       .count {
         position: absolute;
-        top: 170px;
+        bottom: 24px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 332px;
-        padding: 10px 12px;
+        width: 100%;
+        padding: 10px 0;
         color: #fff;
         background: linear-gradient(0deg,rgba(0,0,0,.85),transparent);
-        > span > svg {
-          width: 32px;
-          height: 32px;
+        > .play {
+          padding-left: 32px;
+        }
+        > .comment {
+          padding-right: 32px;
         }
         .play, .comment {
           display: flex;
           align-items: center;
           vertical-align: middle;
-
+          
           svg {
+            width: 32px;
+            height: 32px;
             margin-right: 8px;
           }
         }
