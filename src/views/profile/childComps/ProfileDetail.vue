@@ -26,7 +26,8 @@
 
     <div class="part2">
       <p class="username">{{userInfo.name}}</p>
-      <p class="content">{{userInfo.user_desc}}</p>
+      <p class="content" v-if="userInfo.user_desc">{{userInfo.user_desc}}</p>
+      <p class="content" v-else>这个人很懒，什么都没有留下</p>
     </div>
   </div>
 </template>
